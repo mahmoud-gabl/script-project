@@ -1,0 +1,271 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+ .container{
+    width: 90%;
+    margin: 100px ;
+    margin: auto;
+ }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #ccc;
+}
+nav .right ul{
+  margin-left: 30px ;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+
+
+}
+nav .right ul a{
+
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    transition: 0.7s;
+
+}
+nav .right ul a:hover{
+    background-color: gray;
+
+}
+
+nav .left a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.7s;
+}
+nav .left a:hover{
+    background-color: gray;
+
+}
+
+nav .left a span{
+    font-weight: bold;
+    padding-right: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    opacity: 0.7;
+}
+header{
+    background-image: url(header.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+}
+header h2{
+   position: absolute;
+   top: 50%;
+   right: 43%;
+   color: white;
+}
+header h2 span{
+   font-weight: bold;
+   background-color: black;
+   color: white;
+   padding: 10px;
+   margin-right: 5px;
+   opacity: 0.7;
+}
+.projects{
+   margin: 100px 0;
+   margin: auto;
+}
+.houses{
+    margin-top: 50px;
+    display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.house{
+    width: 24%;
+    position: relative;
+
+}
+.house img{
+   width: 100%;
+   transition: 0.9;
+}
+.house img:hover{
+    transform: scale(1.1);
+}
+
+hr{
+    margin: 30px;
+    opacity: 0.5;
+}
+.house p{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    
+}
+.chars{
+    display: flex;
+    gap: 10px;
+
+}
+.char{
+    width: 24%;
+}
+.char > *{
+    margin-bottom: 20px;
+
+}
+.char img{
+    width: 100%;
+    transition: 0.9;
+}
+.char img:hover{
+    transform: scale(1.1);
+}
+
+
+.main-p{
+    line-height: 1.8;
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 30px;
+}
+.char button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    transition: 0.7;
+    border-radius: 20%;
+    background-color: orange;
+    border: solid;
+}
+.char button:hover{
+    background-color: brown;
+}
+.char h4{
+    opacity: 0.5;
+}
+.char p{
+    line-height: 1.8;
+    font-size: 18px;
+}
+.content p{
+    font-size: 20px;
+    color: black;
+}
+.content input{
+  width: 90%;
+  margin-top: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom:  1px solid brown;
+  
+}
+.content button{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(255, 128, 0);
+    font-size: 10px;
+    transition: 0.7;
+    border-radius: 20%;
+    outline: none;
+}
+.content button:hover{
+    background-color: brown;
+
+}
+.map img{
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media  screen and (max-width : 480px){
+    nav{
+        padding: 20px;
+    }
+    nav .right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+   
+    header h2{
+      left: 30%;
+    }
+    .houses{
+        flex-direction: column;
+        
+    }
+    .house{
+        width: 100%;
+    }
+
+    .chars{
+        flex-direction: column;
+    }
+    .char{
+        width: 100%;
+    }
+
+}
+
+@media  screen and ( min-width : 481px) and ( max-width : 990px){
+
+    nav{
+        padding: 20px;
+    }
+    nav .right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+   
+    header h2{
+      left: 30%;
+    }
+    .houses{
+        flex-wrap: wrap;
+        
+    }
+    .house{
+        width: 48%;
+    }
+
+    .chars{
+        flex-wrap: wrap;
+    }
+    .char{
+        width: 48%;
+    }
+
+}
+
+
